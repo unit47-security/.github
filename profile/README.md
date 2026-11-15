@@ -14,19 +14,28 @@ We develop research tools and reproducible experiments to understand software fa
 - Web and API authorization testing
 - Custom tooling, test harnesses, and research automation
 
-## Tools & projects in development
+## Projects
 
-### RoleDiff
+Public research tools developed by UNIT-47. Each project has its own maturity level, supported environments, and documented limitations.
 
-Compare application behavior across users, roles, and tenants to investigate authorization flaws.
+### [Ressembly](https://github.com/unit47-security/Ressembly)
+**Alpha 0.6.0**
 
-### FaultCore
+An experimental reverse-engineering and memory-research suite using GDB/Python on Linux x86-64. Includes debugging context, memory inspection, selective allocation tracking, experiment dossiers, and an offline Ghidra bridge. Support is limited to the target configurations documented in the repository.
 
-Reproduce crashes and minimize the inputs that trigger them while preserving the observed failure.
+### [FaultCore](https://github.com/unit47-security/FaultCore)
+**v0.1.0 - Laboratory MVP**
 
-### UNIT-47 Toolkit
+A local tool for crash reproduction, signature-preserving input minimization, and structured JSON/text reports. Validated scope is limited to documented laboratory fixtures; a matching crash signature does not establish a shared root cause or confirm a vulnerability.
 
-A planned collection of focused research utilities, test harnesses, and documented lab exercises for binary analysis, instrumentation, and security testing.
+### [RoleDiff](https://github.com/unit47-security/RoleDiff)
+**0.2.0-preview**
+
+Compares JSON API behavior across identities, roles, and tenants against explicit access expectations. Supports human triage and regression tests for manually confirmed authorization cases. Response differences are investigation candidates, not automatic vulnerability confirmations.
+
+## Planned work
+
+**UNIT-47 Toolkit** is a planned collection of focused research utilities, test harnesses, and documented lab exercises. It is not currently presented as a separate published tool.
 
 ## Approach
 
@@ -38,7 +47,7 @@ Research and testing are conducted on systems we own or are explicitly authorize
 
 ## Development status
 
-Projects are under development. Release status, installation instructions, supported environments, and known limitations will be documented in each repository.
+Public repositories are available and development continues. These tools are experimental; publication does not imply production readiness. Consult each repository for its current version, installation instructions, validation evidence, supported environments, and known limitations.
 
 ## Join UNIT-47
 
